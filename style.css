@@ -1,0 +1,108 @@
+/*
+1. Posicionamiento
+2. Modelo de Caja (box model)
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+
+:root{
+    /*  colores   */
+    --primary-color1: #49111C;
+    --primary-color2: #F8A477;
+    --secondary-color1: #1E555C;
+    --secondary-color2: #4F6D7A;
+    --additional-color: #F2FBE0;
+    --background-color-theme1: #fafafa;
+    --background-color-theme2: #242424;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #e76f51 5%, #F8A477 100%);
+}
+
+header img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    align-self: center;
+    fill: var(--primary-color1);
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--title-container h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--primary-color1);
+}
+
+.header--title-container p{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--background-color-theme2);
+}
+
+.header--title-container h2{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--background-color-theme2);
+}
+
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 118px); /*esto es interesante*/
+    top: 270px;
+    margin-top: 35px;
+    display: block;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color:var(--primary-color1);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--background-color-theme1);
+}
+
+.header--button img{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/abajo.svg');
+}
